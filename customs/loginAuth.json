@@ -1,0 +1,213 @@
+{
+  "cookies": [
+    {
+      "name": "JSESSIONID",
+      "value": "node01k1pwdfu8ubn8p1hgydnjzmrj5900.node0",
+      "domain": "federate.acc.ping.awssdu.nl",
+      "path": "/reflogin",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "pf-origin",
+      "value": "https://inenuitvoer.dev.sduoneplatform.nl",
+      "domain": "federate.acc.ping.awssdu.nl",
+      "path": "/as",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Host-next-auth.csrf-token",
+      "value": "2f279c775230d165a1d844dabdd127fc394e0503fa9053cdf6da84ba068f0794%7Ca16e3f6728ebc6196146658119948c78b557ab243a62aecc757202c00cd82a86",
+      "domain": "inenuitvoer.dev.sduoneplatform.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "spses.a0dd",
+      "value": "*",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1750072660,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "didomi_token",
+      "value": "eyJ1c2VyX2lkIjoiMTk3Nzg1YTEtMzBjYS02ZTJiLTk0ZDAtZmQxN2Q3MTNhZTg5IiwiY3JlYXRlZCI6IjIwMjUtMDYtMTZUMTA6NDc6MzguNTA4WiIsInVwZGF0ZWQiOiIyMDI1LTA2LTE2VDEwOjQ3OjQwLjAwNFoiLCJ2ZXJzaW9uIjoyLCJwdXJwb3NlcyI6eyJlbmFibGVkIjpbImRldmljZV9jaGFyYWN0ZXJpc3RpY3MiLCJnZW9fYWRzIiwiZ2VvX21hcmtldGluZ19zdHVkaWVzIiwiZ2VvbG9jYXRpb25fZGF0YSJdfSwicHVycG9zZXNfbGkiOnsiZW5hYmxlZCI6WyJjb29raWVzcmUtd1l6aFg5YkwiXX0sInZlbmRvcnMiOnsiZW5hYmxlZCI6WyJnb29nbGUiLCJjOnNkdS1KM0M2TkNoZSIsImM6YmluZy1hZHMiLCJjOnlvdXR1YmUiLCJjOmhvdGphciIsImM6bGlua2VkaW4iLCJjOmNvbnRlbnRzcXVhcmUiLCJjOm1pY3Jvc29mdCIsImM6bGVhZGluZm8tTXpNWE55bXAiXX0sInZlbmRvcnNfbGkiOnsiZW5hYmxlZCI6WyJnb29nbGUiLCJjOnNkdS1KM0M2TkNoZSJdfSwiYWMiOiJDbldBRUFGa0ZPb0EuQ25XQUVBRmtGT29BIn0=",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1781693260,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "euconsent-v2",
+      "value": "CQTGbEAQTGbEAAHABBENBuFsAP_gAEPgABpYGaQAgF5gM0AvOACAvMAA.f_wACHwAAAAA",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1781693260,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sduGdprConsent",
+      "value": "[\"1\",\"nai-qgij0irix35fifrgumoz7eqbtsg\",\"1\"]",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1757846860.274032,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sduGdprConsent.sig",
+      "value": "Qoxy8N8kQmtWMXSqrSbnd9kNhQo",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1757846860.274096,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Finenuitvoer.dev.sduoneplatform.nl%2F%23.",
+      "domain": "inenuitvoer.dev.sduoneplatform.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.645091196.1750070860",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1757846860,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "spid.a0dd",
+      "value": "5ab6501d-8f66-4c3e-99d2-37a8d270ef21.1750070860.1.1750070860..10d00e66-36ae-42ad-ac86-0c96d9b1c712..ca6b23d9-aa01-4fa9-baab-f159040b1b37.1750070859941.5",
+      "domain": ".sduoneplatform.nl",
+      "path": "/",
+      "expires": 1782816460,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sp",
+      "value": "b4cdae13-09db-4aa5-965a-b19aedded13b",
+      "domain": ".sdu.nl",
+      "path": "/",
+      "expires": 1781606860.433087,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "pf-origin-request",
+      "value": "aHR0cHM6Ly9mZWRlcmF0ZS5hY2MucGluZy5hd3NzZHUubmwvYXMvYXV0aG9yaXphdGlvbi5vYXV0aDI/Y2xpZW50X2lkPXNkdV90aXRhbl9pbmVudWl0dm9lciZzY29wZT1vcGVuaWQlMjBlbWFpbCUyMHByb2ZpbGUlMjBpbmVudWl0dm9lciZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHBzJTNBJTJGJTJGaW5lbnVpdHZvZXIuZGV2LnNkdW9uZXBsYXRmb3JtLm5sJTJGYXBpJTJGYXV0aCUyRmNhbGxiYWNrJTJGb2F1dGgmc3RhdGU9VWlJRFp4SVB4U21sYXBSYmRpUXRSdUdIV1ZwTU9TTV9DYVM1Z3R2U1NDNCZjb2RlX2NoYWxsZW5nZT0wRDVOZHZuOE85TTZ1b0QwQkRKSk5UNS1NcjBqY1VEb3RjYUtTUzdlLUdrJmNvZGVfY2hhbGxlbmdlX21ldGhvZD1TMjU2",
+      "domain": "federate.acc.ping.awssdu.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "PF",
+      "value": "MKe30OHNDsxwBoKzrI9zY5cEBQCCDSlkGzenB2iE1WOo",
+      "domain": "federate.acc.ping.awssdu.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "idp-domain",
+      "value": "Continue",
+      "domain": "federate.acc.ping.awssdu.nl",
+      "path": "/",
+      "expires": 1752662861.618961,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "IdentifierFirstAdapter.previous.subjects",
+      "value": "dGl0YW5zZHVAZ21haWwuY29t",
+      "domain": "federate.acc.ping.awssdu.nl",
+      "path": "/",
+      "expires": 1752662861.619007,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-next-auth.session-token",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..RveYfxNkYHPt9RV-.jRQO11cNzgIq8kOJN_tAMRVVZs21QlQFd2hSM_3wy9_Q4K1QLBBP88MlBoEscyFOT8srnzhD5e8FTwDeNqUiusztknji10KwfQqD4myT90tFa0YveqN3IsW-a_Z5BAiCwDulRKJbeB-y4Ikz0S-C9ZaJBUEw2hzCeg579bW3PtwA8N-fzFVPT6mOc9jw3Azqm5Zl4TzGw6UHOFF8m2gg0zFvaBEjjFXNB08LR2_byq-ipQTrM-YXQ80FalTWfnbTVgW9kKVgjplSzAvpUexuqqEQRWAyPSlvNEKPDvxMwSZ0S6gYEEinzyuW-2y64MQp2H5gFVBwsBG0-n3tY_Rjv8K5gWtuLoOHgG--__iIFskuv1nYfHfxCM0BrOCPRBVySZ-D2wpNSIE3LCzN8-KCZYhCqhAELutDYV7HfE7MQOqpEecxxYqBkdfPwlEA-Tx1ovuABs7V2mZ-cMahXuHTsk2xOo5g3D2zAi-zJmbBNKTGYGjA6ZSmyEmxuFy_Lpvrnswev5U_keyWDvYOpmOwq-6DmT696aOSU_8W2TC94kw5gHkBHEQZy5JghqFhUfd5dmzSzWkkFrzoCcrTbSF9iUNU-Oz-4XvVujPZULqvKU0PiXlLIXal2SiQYK-JVw7iwDLveP-KRtAZSYxUuZULkB-BQJ-LWxTSX-M4wjYjLgwQBzcArZEZ5YVdXkT3pRBeJ16JIfuGzk5D4ayWnIzPDxFaIOLCSvtQ-NajC-cy6lV20I1kCb1kosJKVyRIWsuGsAxpDACtVIVQTij8XPmtH5p70kiVdh7vQA_F915W8h10fqyS1jl2GeFSRbBjdodMFQ6wnc8n4vfxph8uwypV9HvQd8-90B8TG0uuu-M5Emm7lL0kjNy6HRncHe0PvWaT_6rpcbGNSuGbQJzDjyFMjsz81Bm8c4fPggA92bhSC1pQu5aJrbGLIwzw_SQbLcbCTEH51HUIp0GB9Qlf106H_aC64X5rkTZf8Xih7QAWFIxr8NLzzWJn-PTAYP-K5XnZ8RrFTbhlO2SSZizbIrDoEM_HzQ2O4X-EY2DkIgYV0uJO-H_QdstwK6HFsk_ckqBXtlB-35Z-ewZauiSlG6-A5BztbZm0SnEFz01mv2zKQWZ4v8APABrTQmJR9GyRKnVOQFRnuiB3PLyRpFStCDLLUMQwfHp22M6NmH9wCtZoAaSQ65JZal7obPW8bhwqvWIDghAjEuwocuR-MG63ikjrSkUOjXGQnU4hFKY1OCYHHNVGKnUPP4R5TSrjzoBEXQBZc_pnAUPaGVv56V7RUYl2v8EN2hhLmBBxNDaFfiA1RlXxl6JWhZQQsfZIrFAXMh6ZZT9r-4aEnVTGn3yE-sjrMBQFg3_AgIN9qtp5aMER6GxfJ4SakDNxFOjBoL6UFVAE8Dp-i-aI-5IrJa9ig17lQ_QfjSHnMWnNR4rPh0EOvS9S2JeQeZ-ef7zlQBQLHDnQXw0VxFx1M7VnXfaHnjkIEMJCaLhJtiBjom0uRy_0nCBhNUJSHX5uTKalRvGhS5fXpPWdoPbVmuAih-PJv-jssz6D3Nf5g18MiiaPszKTS2eOgO8j0k-QJzMVJrVwTOYpR9GNceCIGFoZwGa5m-mP-KwR3-9fATxYocUQ7H1fi8MkUcWuSmPcnSurxxZft_LYjtHQIjNXK6ZouzwT3gO_42LYkVA9_trDT4o37B7FC_rmLu6zLFNl7p5IpH6l4PZyOxm_JWpE8iNKCLWhjTo5m9s1TOJuTI_kygoCVQYpYWglwoTTfN_jMXGn3SpEViBLeAZtyMZtV6gGcxMpVPp-sDBfr4pChOpqYxS-DhUvwQIxjjSiMRmyVhOp6NbU1XMoeMQZi_SFjZGdQLoynzq7riBnZfQJFKeuojEqUCWWwQYc5LJlULtHi0T96s3R7hhcCp-EwvMkhkQ-C3g1wq_boMjKwXkNqRE76R7wV4Dgy6UnsnJYR5dhqRBUoX9v1o8p4nnOn2CGGnrfG73_RxT9T6TTrwSr8fXMM_OkK4ViK1o7Y5kV9f4d5HPAAOKwBC2f9_-I6pS5vAXGSS4zt0OvFEtNh8830Km9Z-ZrxFZRCtt_hh4NTA0VzmiLibSG4nnrncTIJXdORBwLl_0nQcR612cDR9OaEtrGMfUf07gLLNQsi0HuysI9uucO8ed1C3NoJbme0R8UWkuWni4n6iSE2zDXQ5CmNBVGdGWgaPJEufmwIYXxZyKII66sQ2U_tUCUOgdPzWN15KBxe4JfHOd2w4BQaZoDQ8WTQq5HKbO8RlRHoqnQyuXfzItD3DOSYII3IxtMufmTkbOmExCOe9rATNpEz14Z_4qqiRENFdD8RTZm-f_mgq4dk_ghmTZKsS9GuBPW5r9KUSUNh7_ECuBlVTaheMeGuNY560c-5HI6Pzkl4P_uFjvgdaS8hD-3b5nZ4nEoSmjH7Ivj9Ibv1-1hJBLOoSk9yNrLRvNCEh4_AIJa99EMfrEkccY-1EplK7B5_H89_8a8R6-aAi9hjPWYqbqNO0NNSDCXKSIsEvN_Ao4TSMrwYwQt_99waFdfk-uOLDbTvblYgQlF9Ek6Boyi0NJPiIF5iEHgx9U6AUcsYTzD_zmEsaNcRLdojT91MQDZmAN-EHjmTt1ubDqDQ-jiO8LKZvn6J6narRL6wD4FAeUYJ-Zuw6ivqfz02iLaru2xKR96z5vwauoo2lZ5prksmniVbBoRe-qcdwIOJraCU0happ1S_AYHgpn-N9N1e4CL3cwNQHFHjnCt1-bRegrKq_XNJmHgSUUE_LrLxvqkCVi5st-oHYeXKn_by_K-bKcNMFJiMB5XxOUVpbZgKGXe4ZFv4oXNSouTjY1A3Ach2AfNBQ5Q6YgVj4EzjFyty_ppScvhLbITvwn5eUSbPS9QkXz3alc9VkvlZ1vwoqNeebfb4oEFAw5Xtoj4o5KWZE0rePwH4DZw5V6qIBLFQowrrWvvWQOtZ8BK6qvH-6JGc6WgQF1BI-dZz6YzSQvp_mOvI9vGUolhxtDG1qs1DFHXrArt25rkfmB9yuMtJ1U9JeAKTxCkb1slguYr_0ReuJIf9Hrnjg31qOe4oDUt4QmzRRAu3mk4IeKRHkO9V4KyTfAnVLlEs_cfo_ZbkJlh7ipXYfYnwavXeM4CJd-4UmgMPW34O-Z80K3l7CJYUnuLQ-rczJCfjMuERe4r0XEkzSPpV6IcV4bhUTo37uJHRjLyEGWKiPHrzlGwKTM1yTPgFJrzL8xfH6F33orfY8QcBUZuc2fwPGTei8U4GXBFk8FwfN3yi20xCVc0u3Ke7nYTdvPP8OfwM3NoeJlpL3o6-Goqr2JywYHBYZKZtt1KGaHH7xweLJsWIaUA_SsYJY4ExY5dipm2QuoM7IRE5lCG61Ag-8Fs3StcaBjL9-7TWrwVjo-fZZ4uZzOKM6FEAElASg75Toheicb6kPT1kjorm0gdoETka_Pa62efYbX_UlXY0fwP0p6pe59ewwrwlmRAYfCEiEfvsEsxsgIVvYOvsFhW2gvo3lIfWOUR5wAvIbcfbhscwMvnYaCg0DplpzXTfyMu6D3zmykc5s4FoUBoj2dR1_rZvAr7WIrRNgl8ockmsjdMbYYySmNnHOk.TNh2M9DyoRmcD9qH_186aQ",
+      "domain": "inenuitvoer.dev.sduoneplatform.nl",
+      "path": "/",
+      "expires": 1752662861.757222,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://inenuitvoer.dev.sduoneplatform.nl",
+      "localStorage": [
+        {
+          "name": "didomi_token",
+          "value": "eyJ1c2VyX2lkIjoiMTk3Nzg1YTEtMzBjYS02ZTJiLTk0ZDAtZmQxN2Q3MTNhZTg5IiwiY3JlYXRlZCI6IjIwMjUtMDYtMTZUMTA6NDc6MzguNTA4WiIsInVwZGF0ZWQiOiIyMDI1LTA2LTE2VDEwOjQ3OjQwLjAwNFoiLCJ2ZXJzaW9uIjoyLCJwdXJwb3NlcyI6eyJlbmFibGVkIjpbImRldmljZV9jaGFyYWN0ZXJpc3RpY3MiLCJnZW9fYWRzIiwiZ2VvX21hcmtldGluZ19zdHVkaWVzIiwiZ2VvbG9jYXRpb25fZGF0YSJdfSwicHVycG9zZXNfbGkiOnsiZW5hYmxlZCI6WyJjb29raWVzcmUtd1l6aFg5YkwiXX0sInZlbmRvcnMiOnsiZW5hYmxlZCI6WyJnb29nbGUiLCJjOnNkdS1KM0M2TkNoZSIsImM6YmluZy1hZHMiLCJjOnlvdXR1YmUiLCJjOmhvdGphciIsImM6bGlua2VkaW4iLCJjOmNvbnRlbnRzcXVhcmUiLCJjOm1pY3Jvc29mdCIsImM6bGVhZGluZm8tTXpNWE55bXAiXX0sInZlbmRvcnNfbGkiOnsiZW5hYmxlZCI6WyJnb29nbGUiLCJjOnNkdS1KM0M2TkNoZSJdfSwiYWMiOiJDbldBRUFGa0ZPb0EuQ25XQUVBRmtGT29BIn0="
+        },
+        {
+          "name": "sduConsentData",
+          "value": "{\"auditId\":\"nai-qgij0irix35fifrgumoz7eqbtsg\",\"externalCmpUserId\":\"197785a1-30ca-6e2b-94d0-fd17d713ae89\",\"userDidConsent\":true}"
+        },
+        {
+          "name": "snowplowOutQueue_snowplow_sp_post2.expires",
+          "value": "1813142860434"
+        },
+        {
+          "name": "__anon_id",
+          "value": "\"3de3f114-dc03-4bd2-be7e-619236dd297c\""
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1750070860367},\"expires\":1757846860367}}"
+        },
+        {
+          "name": "euconsent-v2",
+          "value": "CQTGbEAQTGbEAAHABBENBuFsAP_gAEPgABpYGaQAgF5gM0AvOACAvMAA.f_wACHwAAAAA"
+        },
+        {
+          "name": "snowplowOutQueue_snowplow_sp_post2",
+          "value": "[]"
+        },
+        {
+          "name": "silent-auth",
+          "value": "1750070858341"
+        }
+      ]
+    }
+  ]
+}
