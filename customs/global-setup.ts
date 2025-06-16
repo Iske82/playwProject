@@ -10,7 +10,7 @@ async function globalSetup() {
   page = login.page;
   context = login.context;
 
-  await page.context().storageState({ path: "./loginAuth.json" });
+  await page.context().storageState({ path: './customs/loginAuth.json' });
   await browser.close();
 }
 export default globalSetup;
