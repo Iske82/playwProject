@@ -1,33 +1,27 @@
 import { test, expect, BrowserContext, Page } from "@playwright/test";
+import NieuwsHomePage from "../../pages/niuews/niuewsHome.page";
 
 test.describe("Test filter functionality", () => {
+  let nieuwsHomePage: NieuwsHomePage;
   test.beforeEach(async ({ page }) => {
     await page.goto(`${process.env.BASE_URL}nieuws/NIU`);
+    nieuwsHomePage = new NieuwsHomePage(page);
 
-    const filter = page.locator(
-      "[data-test-id='newsSourceFiltersTriggerButton']"
-    );
-    await filter.waitFor();
-    await filter.press("Enter");
+    await nieuwsHomePage.filter.waitFor();
+    await nieuwsHomePage.filter.press("Enter");
 
-    const rubriek = page.locator(
-      "[data-test-id='newsSourceFiltersFilterAccordionsectionsButton']"
-    );
-    await rubriek.waitFor();
-    await rubriek.press("Enter");
+    await nieuwsHomePage.rubriek.waitFor();
+    await nieuwsHomePage.rubriek.press("Enter");
   });
 
   test.describe("Test Search", () => {
-    test("Verify search bar is present", async ({ page }) => {
-      const searchBar = page.locator(
-        "[data-test-id='newsSourceFiltersFilterComponentsectionsSearchElement']"
-      );
-      await expect(searchBar).toBeVisible();
+    test("Verify search bar is present", async ({ }) => {
+      await expect(nieuwsHomePage.searchBar).toBeVisible();
     });
   });
 
   test.describe("Test Rubriek", () => {
-    test.skip("Verify rubriek values are listed", async ({ page }) => {
+    test("Verify rubriek values are listed", async ({ page }) => {
       const expectedTexts = [
         "Algemeen",
         "Algemeen douanerecht",
@@ -54,7 +48,7 @@ test.describe("Test filter functionality", () => {
 
       for (const text of expectedTexts) {
         const span = page
-          .locator("span.sc-v665jq-0.sc-yzf6yb-1.UIwax.bfnXKk")
+          .locator("span.sc-v665jq-0.sc-yzf6yb-1.fjcYfP.bfnXKk")
           .filter({ hasText: new RegExp(`^${text}$`) });
 
         await expect(span).toBeVisible({ timeout: 5000 });
