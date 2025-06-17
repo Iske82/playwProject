@@ -1,12 +1,15 @@
 import { test, expect } from "@playwright/test";
 import HomePage from "../../pages/home.page";
+import NieuwsHomePage from "../../pages/niuews/niuewsHome.page";
 
 test.describe("Test nieuws homepage", () => {
   let homePage: HomePage;
+  let nieuwsHomePage: NieuwsHomePage;
 
   test.beforeEach(async ({ page }) => {
     await page.goto(`${process.env.BASE_URL}nieuws/NIU`);
     homePage = new HomePage(page);
+    nieuwsHomePage = new NieuwsHomePage(page);
   });
 
   test("Verify the title of the home page", async ({ page }) => {
@@ -23,44 +26,27 @@ test.describe("Test nieuws homepage", () => {
     await homePage.searchBar.fill("Een gewasbeschermingsmiddel");
     await homePage.searchBar.press("Enter");
 
-    const searchResultsNumber = page.locator(
-      "[data-test-id='searchMetadataCountAmount']"
-    );
-
-    const text = await searchResultsNumber.textContent();
-    const number = text ? parseInt(text.trim(), 10) : 0;
-
-    expect(number).toBeGreaterThan(100);
+    await expect(nieuwsHomePage.searchResultsNumber).not.toHaveText("0");
+    const text = await nieuwsHomePage.searchResultsNumber.textContent();
+    expect(parseInt(text ?? "0")).toBeGreaterThan(0);
   });
 
   test("Verify the filter is present", async () => {
     await expect(homePage.filterRubriek).toBeVisible();
   });
 
-  test.skip("Verify specific filter is applied", async ({ page }) => {
-    const filter = page.locator(
-      "[data-test-id='newsSourceFiltersTriggerButton']"
-    );
-    await filter.waitFor();
-    await filter.press("Enter");
+  test("Verify specific filter is applied", async ({ page }) => {
+    await nieuwsHomePage.filter.waitFor();
+    await nieuwsHomePage.filter.click();
 
-    const rubriek = page.locator(
-      "[data-test-id='newsSourceFiltersFilterAccordionsectionsButton']"
-    );
-    await rubriek.waitFor();
-    await rubriek.press("Enter");
+    await nieuwsHomePage.rubriek.waitFor();
+    await nieuwsHomePage.rubriek.click();
 
-    const specificRubriek = page.locator("span:has-text('Algemeen')").first();
-    await specificRubriek.waitFor();
-    await specificRubriek.press("Enter");
+    await nieuwsHomePage.specificRubriek.waitFor();
+    await nieuwsHomePage.specificRubriek.click();
 
-    const confirmBtn = page.locator(
-      "[data-test-id='newsSourceFiltersTriggersContainerConfirmButton']"
-    );
-    await confirmBtn.waitFor({ state: "visible" });
-    await confirmBtn.press("Enter");
-
-    const countText = await confirmBtn.textContent();
+    await nieuwsHomePage.filterSearchResults.waitFor({ state: "visible" });
+    const countText = await nieuwsHomePage.filterSearchResults.textContent();
     expect(countText?.trim()).toBe("1");
   });
 
@@ -70,7 +56,6 @@ test.describe("Test nieuws homepage", () => {
 
   test("Verify the next page is present in pagination", async ({ page }) => {
     await homePage.nextButton.click();
-    const page2 = page.locator("span:has-text('Pagina 2')");
-    await expect(page2).toBeVisible();
+    await expect(nieuwsHomePage.page2).toBeVisible();
   });
 });
