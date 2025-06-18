@@ -1,4 +1,9 @@
 name: Playwright Tests
+run: npx playwright test
+  env:
+    BASE_URL: https://inenuitvoer.dev.sduoneplatform.nl/
+    APP_USERNAME: titansdu@gmail.com
+    PASSWORD: Gjk5lel@oa!ka4
 
 on:
   push:
