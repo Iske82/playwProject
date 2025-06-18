@@ -5,12 +5,12 @@ let page: Page;
 let context: BrowserContext;
 
 async function globalSetup() {
-  const browser: Browser = await chromium.launch({ headless: false });
+  const browser: Browser = await chromium.launch({ headless: true });
   const login = await loginWithBasicAuth(browser);
   page = login.page;
   context = login.context;
 
-  await page.context().storageState({ path: './loginAuth.json' });
+  await page.context().storageState({ path: "./loginAuth.json" });
   await browser.close();
 }
 export default globalSetup;
