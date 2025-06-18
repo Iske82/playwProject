@@ -29,7 +29,7 @@ export async function homeLogin(page: Page): Promise<void> {
   await loginButton.waitFor({ timeout: 60000 });
 
   // Screenshot before click for CI debugging
-  await page.screenshot({ path: "screenshot-before-inloggen.png" });
+  await page.screenshot({ path: path.resolve(__dirname, "./screenshot-before-inloggen.png") });
 
   await loginButton.click();
   await page.locator("#username").fill(username);

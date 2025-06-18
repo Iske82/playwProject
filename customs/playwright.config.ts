@@ -33,7 +33,7 @@ export default defineConfig({
     trace: "on-first-retry",
     storageState: "./loginAuth.json",
   },
-
+  outputDir: "test-results",
   /* Configure projects for major browsers */
   projects: [
     {
