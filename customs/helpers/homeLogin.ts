@@ -13,7 +13,7 @@ export async function homeLogin(page: Page): Promise<void> {
   }
 
   await page.goto(process.env.BASE_URL || "");
-  await page.locator("#didomi-notice-agree-button").click();
+  //await page.locator("#didomi-notice-agree-button").click();
   await page.locator('button:has-text("Inloggen")').click();
   await page.locator("#username").fill(username);
   await page.locator('[data-test-id="button"]').nth(0).click();
