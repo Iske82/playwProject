@@ -12,6 +12,10 @@ jobs:
     defaults:
       run:
         working-directory: customs
+    env:
+        BASE_URL: https://inenuitvoer.dev.sduoneplatform.nl/
+        APP_USERNAME: titansdu@gmail.com
+        PASSWORD: Gjk5lel@oa!ka4
 
     steps:
       - name: Checkout code
@@ -30,10 +34,6 @@ jobs:
 
       - name: Run Playwright tests with tracing enabled
         run: npx playwright test --trace on
-        env:
-          BASE_URL: https://inenuitvoer.dev.sduoneplatform.nl/
-          APP_USERNAME: titansdu@gmail.com
-          PASSWORD: Gjk5lel@oa!ka4
 
       - name: Upload Playwright HTML Report
         if: always()
