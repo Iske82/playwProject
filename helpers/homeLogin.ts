@@ -26,11 +26,14 @@ export async function homeLogin(page: Page): Promise<void> {
 
   // Wait and debug Inloggen button
   const loginButton = page.locator('button:has-text("Inloggen")');
-  await loginButton.waitFor({ timeout: 60000 });
+  await page.screenshot({ path: "debug-login-visible.png" });
+  await page.screenshot({
+    path: path.resolve(process.cwd(), "screenshot-before-inloggen.png"),
+  });
 
   // Screenshot before click for CI debugging
   await page.screenshot({
-    path: path.resolve(process.cwd(), "screenshot-before-inloggen.png"),
+    path: path.resolve(process.cwd(), "screenshot-before-inloggen2.png"),
   });
 
   await loginButton.click();

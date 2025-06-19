@@ -49,9 +49,11 @@ jobs:
           name: playwright-traces
           path: test-results/
 
-      - name: Upload pre-login screenshot
+      - name: Upload pre-login screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pre-login-screenshot
-          path: screenshot-before-inloggen.png
+          name: pre-login-screenshots
+          path: |
+            screenshot-before-inloggen.png
+            screenshot-before-inloggen2.png
