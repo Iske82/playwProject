@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: customs
+        working-directory: .
     env:
         BASE_URL: https://inenuitvoer.dev.sduoneplatform.nl/
         APP_USERNAME: titansdu@gmail.com
@@ -40,18 +40,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: customs/playwright-report/
+          path: playwright-report/
 
       - name: Upload Playwright trace files
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-traces
-          path: customs/test-results/
+          path: test-results/
 
       - name: Upload pre-login screenshot
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pre-login-screenshot
-          path: customs/screenshot-before-inloggen.png
+          path: screenshot-before-inloggen.png
