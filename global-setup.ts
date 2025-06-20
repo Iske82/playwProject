@@ -5,7 +5,7 @@ let page: Page;
 let context: BrowserContext;
 
 async function globalSetup() {
-  const browser: Browser = await chromium.launch({ headless: true });
+  const browser: Browser = await chromium.launch({ headless: false });
   const login = await loginWithBasicAuth(browser);
   page = login.page;
   context = login.context;

@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import path from "path";
 import { Page } from "@playwright/test";
-import fs from "fs/promises";
+import { dismissDidomiBanner } from "../helpers/didomi";
 
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
@@ -18,25 +18,11 @@ export async function homeLogin(page: Page): Promise<void> {
   await page.goto(baseUrl, { waitUntil: "domcontentloaded" });
   await page.waitForLoadState("networkidle");
 
-  // Optional: handle cookie banner
-  const cookieButton = page.locator("#didomi-notice-agree-button");
-  if (await cookieButton.isVisible()) {
-    await cookieButton.click();
-  }
+  // Dismiss cookie/consent banner
+  await dismissDidomiBanner(page);
 
-  // Wait and debug Inloggen button
-  const loginButton = page.locator('button:has-text("Inloggen")');
-  await page.screenshot({ path: "debug-login-visible.png" });
-  await page.screenshot({
-    path: path.resolve(process.cwd(), "screenshot-before-inloggen.png"),
-  });
-
-  // Screenshot before click for CI debugging
-  await page.screenshot({
-    path: path.resolve(process.cwd(), "screenshot-before-inloggen2.png"),
-  });
-
-  await loginButton.click();
+  // Proceed with login
+  await page.locator('button:has-text("Inloggen")').click();
   await page.locator("#username").fill(username);
   await page.locator('[data-test-id="button"]').nth(0).click();
   await page.locator('[data-test-id="passwordElement"]').fill(password);
