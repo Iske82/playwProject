@@ -36,3 +36,16 @@ test.describe("Test Code Page", () => {
     await expect(uitvoerTitle).toBeVisible();
   });
 });
+test.describe("Test code page with Nieuws and Rechtspraak tabs", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto(`${process.env.BASE_URL}gebruikstarief/code/101618`);
+  });
+  test("Verify the presence of Rechtspraak tab", async ({ page }) => {
+    const rechtspraakLInk = page.locator('[data-value="Rechtspraak"]');
+    await expect(rechtspraakLInk).toBeVisible();
+  });
+  test("Verify the presence of Niuws tab", async ({ page }) => {
+    const rechtspraakLInk = page.locator('[data-value="Nieuws"]');
+    await expect(rechtspraakLInk).toBeVisible();
+  });
+});

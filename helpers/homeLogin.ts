@@ -29,4 +29,5 @@ export async function homeLogin(page: Page): Promise<void> {
   await page.locator('button[title="Sign On"]').click();
 
   console.log("Login complete.");
+   await dismissDidomiBanner(page);
 }
